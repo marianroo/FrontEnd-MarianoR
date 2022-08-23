@@ -1,0 +1,44 @@
+
+<body>
+
+    <div class="d-flex justify-content-center">
+
+
+    <img src="../../../assets/edit-data.png" id="edit-logo" />
+
+</div>
+
+<div class="container" *ngIf="hys">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdateHys()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreHys">Nombre del HyS obtenido </label>
+                    <input type="text" class="form-control" id="nombreHys" name="nombreHys" [(ngModel)]="hys.nombreHys" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionHys">Descripcion del HyS</label>
+                    <input type="text" class="form-control" id="descripcionHys" name="descripcionHys" [(ngModel)]="hys.descripcionHys" required>
+                </div>
+                <div class="form-group">
+                    <label for="imgHys">"URL de la imágen del HyS en formato 'https://.."</label>
+                    <input type="text" class="form-control" id="imgHys" name="imgHys" [(ngModel)]="hys.imgHys" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="porcentaje">"Porcentaje de Hys manejado"</label>
+                    <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="hys.porcentaje" required>
+                </div>
+
+
+                <button class="btn btn-primary">
+                    Actualizar datos
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+</body>

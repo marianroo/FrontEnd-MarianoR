@@ -1,0 +1,1 @@
+{"ast":null,"code":"export class Hys {\n  constructor(nombreHys, descripcionHys, imgHys, porcentaje) {\n    this.nombreHys = nombreHys;\n    this.descripcionHys = descripcionHys;\n    this.imgHys = imgHys;\n    this.porcentaje = porcentaje;\n  }\n\n}","map":null,"metadata":{},"sourceType":"module"}

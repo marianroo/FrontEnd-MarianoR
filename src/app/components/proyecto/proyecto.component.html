@@ -1,0 +1,81 @@
+
+
+<div id="gris" class="row">
+    <h1 ></h1>
+  </div>
+    <div id="gris"   class="text-center">
+        
+    <div class="container">
+  
+     
+    <h2 class="font-italic" class="text-shadow"> <b> Proyectos </b></h2>
+    <img id="logo-proyecto-img" src="../../../assets/project.png" alt="" class="center" class="img-fluid" >
+  
+    </div>
+  
+       
+  
+     
+  <div  *ngFor="let Proyectos of pro" class="container text-center">
+  
+   
+  
+      <div class="row">
+
+
+        <div class="col-lg-2">
+
+        <img src="{{Proyectos.imgPro}}" class="img-fluid" id="imagen-proyecto-img">
+
+       </div>
+      
+      
+          <div  class="col-lg-8">
+
+            <h4 class="text-light"> <div class="justify">{{Proyectos.nombrePro}}</div>  </h4>
+          
+            <h5 class="text-light "> <div class="justify"> {{Proyectos.descripcionPro}} </div>  </h5>
+
+        </div>  
+
+        </div>
+
+
+
+
+       
+            
+            <td *ngIf="isLogged">
+                <button class="btn btn-light" routerLink="/editpro/{{Proyectos.id}}">
+                    <i class="bi bi-pencil-fill"></i> EDIT</button>
+            </td>
+
+            
+  
+
+         
+            <td *ngIf="isLogged">
+                <button class="btn btn-danger" (click)="deletePro(Proyectos.id)">
+                    <i class="bi bi-trash-fill"></i> DELETE</button>
+            </td>
+      
+      
+
+
+  
+  
+  </div>
+
+
+      
+
+
+
+
+<div class="col-lg-11" id="gris"  class="text-center">
+    <button type="button" class="btn btn-primary" routerLink="/nuevopro" *ngIf="isLogged">
+       Agregar un nuevo proyecto
+    </button>
+</div>
+
+

@@ -1,0 +1,40 @@
+
+<body>
+
+    <div class="d-flex justify-content-center">
+
+
+    <img src="../../../assets/edit-data.png" id="edit-logo" />
+
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreateHys()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreHys">Nombre del Hys obtenido </label>
+                    <input type="text" class="form-control" id="nombreHys" name="nombreHys" [(ngModel)]="nombreHys" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionHys">Descripcion del Hys obtenido</label>
+                    <input type="text" class="form-control" id="descripcionHys" name="descripcionHys" [(ngModel)]="descripcionHys" required>
+                </div>
+                <div class="form-group">
+                    <label for="imgHys">"URL de la imágen del HyS en formato 'https://.."</label>
+                    <input type="text" class="form-control" id="imgHys" name="imgHys" [(ngModel)]="imgHys" required>
+                </div>
+                <div class="form-group">
+                    <label for="porcentaje">Porcentaje de Hys adquirido</label>
+                    <input type="text" class="form-control" id="porcentaje" name="porcentaje" [(ngModel)]="porcentaje" required>
+                </div>
+                <button class="btn btn-primary">
+                    Agregar HyS
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>

@@ -1,0 +1,37 @@
+
+<body>
+
+    <div class="d-flex justify-content-center">
+
+
+    <img src="../../../assets/edit-data.png" id="edit-logo" />
+
+</div>
+
+
+<div class="container" *ngIf="pro">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdatePro()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreE">Nombre del proyecto realizado</label>
+                    <input type="text" class="form-control" id="nombrePro" name="nombrePro" [(ngModel)]="pro.nombrePro" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE">Descripcion del proyecto</label>
+                    <input type="text" class="form-control" id="descripcionPro" name="descripcionPro" [(ngModel)]="pro.descripcionPro" required>
+                </div>
+                <div class="form-group">
+                    <label for="imgE">"URL de la imágen del proyecto en formato 'https://.."</label>
+                    <input type="text" class="form-control" id="imgPro" name="imgPro" [(ngModel)]="pro.imgPro" required>
+                </div>
+                <button class="btn btn-primary">
+                    Actualizar datos
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+</body>

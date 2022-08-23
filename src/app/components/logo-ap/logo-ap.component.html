@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="container">
+        <div class="logo">
+            <a href="https://argentinaprograma.inti.gob.ar/">  <img src="../../../assets/APLogo-20-20.png" id="logoAP" alt=""></a>
+        </div>
+        <div class="redes">
+
+            <a href="https://www.instagram.com/_marianotor_/"><img src="../../../assets/instagramLogo.png" id="instagramLogo" alt=""> </a>
+
+            <a href="https://www.facebook.com/mariannnrojas/"><img src="../../../assets/facebookLogo.png" id="facebok" alt=""> </a>
+            <a href="https://www.linkedin.com/in/mariano-rojas-464b82172/"><img src="../../../assets/linkedin.png" id="linkedin"></a>
+            <a href="https://twitter.com/tweeter"><img src="../../../assets/twitter.png" id="twitter" alt=""> </a>
+           
+            <a href="https://github.com/marianroo"><img src="../../../assets/GitHubLogo.png" id="git" alt=""> </a>
+           
+            <button type="button" class="btn btn-outline-light" (click)="login()" *ngIf="!isLogged">Login</button>
+            <button type="button" class="btn btn-outline-light" (click)="onLogOut()" *ngIf="isLogged">Log Out</button>
+        </div>
+    </div>
+</div>
+

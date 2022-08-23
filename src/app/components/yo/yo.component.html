@@ -1,0 +1,84 @@
+<div id="azul" class="row" *ngFor="let Yo of yo">
+
+ 
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2" >
+
+    
+        
+      
+      <img src={{Yo.imgYo}} class="img-fluid" id="fotodeperfil" >
+
+   
+
+
+    </div>
+
+ 
+
+
+
+
+    
+
+    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2">
+       
+
+        <!-- para usar la base d datos .json -->
+
+        <div class="text-shadow">
+   
+       <h2 id="nombreCompleto" > <b> {{Yo.nombreYo}} </b></h2> 
+
+      </div>
+        
+       
+
+
+         <!-- para usar la base d datos .json -->
+
+        
+
+            
+
+
+          
+
+   <!--   <h5> Full Stack Developer Jr</h5> -->
+
+    <h5 class="text-light"> {{Yo.tituloYo}}</h5> 
+
+        
+
+    </div>
+
+    <div class="col-xs-12 col-sm-8col-md-8 col-lg-8"> 
+        <span>
+            <h3 class="text-shadow"> <b> Sobre de mí </b></h3>
+            
+     <!--  <p class="text-light">Ingeniero Electromecánico y Doctor en Ingeniería Industrial. Coordinador y Desarrollador de Proyectos en diversas ramas de la ingeniería: procesos, productos, optimización, programación en varios lenguajes</p>  -->  
+            <p class="text-light" >{{Yo.descripcionYo}}</p>
+    
+    
+    </span>
+    </div>
+
+
+      <!-- Button trigger modal -->
+      <td *ngIf="isLogged">
+      <button type="button" class="btn btn-primary btn-lg" routerLink="/edityo/{{Yo.id}}" >
+        Editar Información acerca del usuario {{Yo.nombreYo}} </button>
+
+     </td>
+
+
+
+
+
+      
+        
+        </div>
+
+  
+
+<!---->
+

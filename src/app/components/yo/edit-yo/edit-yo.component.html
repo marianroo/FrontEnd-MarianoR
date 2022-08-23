@@ -1,0 +1,57 @@
+
+<body>
+
+    <div class="d-flex justify-content-center">
+
+
+    <img src="../../../assets/edit-data.png" id="edit-logo" />
+
+</div>
+
+   
+
+
+<div class="container" *ngIf="yo">
+
+
+   
+    
+
+ 
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdateYo()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreYo"> <b> Nombre del Usuario del portfolio </b></label>
+                    <input type="text" class="form-control" id="nombreYo" name="nombreYo" [(ngModel)]="yo.nombreYo" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionYo"> <b>Sobre de mí </b></label>
+                    <input type="text" class="form-control" id="descripcionYo" name="descripcionYo" [(ngModel)]="yo.descripcionYo" required>
+                </div>
+                <div class="form-group">
+                    <label for="imgYo"> <b>"URL de la imágen de perfil en formato 'https://.." </b></label>
+                    <input type="text" class="form-control" id="imgYo" name="imgYo" [(ngModel)]="yo.imgYo" required>
+                </div>
+                <div class="form-group">
+                    <label for="tituloYo"> <b>"Título principal del usuario"</b></label>
+                    <input type="text" class="form-control" id="tituloYo" name="imgtituloYoYo" [(ngModel)]="yo.tituloYo" required>
+                </div>
+                <button class="btn btn-primary">
+                    Actualizar datos
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+   
+  
+
+
+
+
+
+</body>
+

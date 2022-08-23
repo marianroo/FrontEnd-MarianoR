@@ -1,0 +1,39 @@
+
+<body>
+
+    <div class="d-flex justify-content-center">
+
+
+    <img src="../../../assets/edit-data.png" id="edit-logo" />
+
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onCreatePro()" novalidate #f="ngForm">
+                <div class="form-group">
+                    <label for="nombreE">Nombre del Proyecto realizado </label>
+                    <input type="text" class="form-control" id="nombrePro" name="nombrePro" [(ngModel)]="nombrePro" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionE">Descripcion del proyecto realizado</label>
+                    <input type="text" class="form-control" id="descripcionPro" name="descripcionPro" [(ngModel)]="descripcionPro" required>
+                </div>
+                <div class="form-group">
+                    <label for="imgEduc">"URL de la imágen del proyecto en formato 'https://.."</label>
+                    <input type="text" class="form-control" id="imgPro" name="imgPro" [(ngModel)]="imgPro" required>
+                </div>
+                <button class="btn btn-primary">
+                    Agregar Proyecto
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+

@@ -1,0 +1,78 @@
+
+
+<div id="gris" class="row">
+    <h1 ></h1>
+  </div>
+    <div id="gris"   class="text-center">
+        
+    <div class="container">
+
+
+    
+  
+     
+    <h2 class="font-italic" class="text-shadow"> <b> Experiencia </b></h2>
+    <img id="llave-inglesa-img" src="../../../assets/llave-inglesa2.png" alt="" class="center" class="img-fluid" >
+  
+    </div>
+  
+       
+  
+     
+  <div  *ngFor="let Experiencia of expe" class="container text-center">
+  
+   
+  
+      <div class="row">
+
+
+        <div class="col-lg-2">
+
+        <img src="{{Experiencia.imgE}}" class="img-fluid" id="logo-array-img">
+
+       </div>
+      
+      
+          <div  class="col-lg-8">
+
+            <h4 class="text-light"  >
+
+              <div class="justify">
+               {{Experiencia.nombreE}}
+
+              </div>
+               </h4>
+          
+            <h5 class="text-light" >
+              <div class="justify">  {{Experiencia.descripcionE}}  </div> </h5>
+
+        </div>  
+
+        </div>
+
+            
+            <td *ngIf="isLogged">
+                <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+                    <i class="bi bi-pencil-fill"></i> EDIT</button>
+            </td>
+            <td *ngIf="isLogged">
+                <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                    <i class="bi bi-trash-fill"></i> DELETE</button>
+            </td>
+      
+      
+
+
+  
+  
+  </div>
+
+
+
+
+
+<div class="col-lg-11" id="gris"  class="text-center">
+    <button type="button" class="btn btn-primary" routerLink="/nuevaexp" *ngIf="isLogged">
+      Agregar una nueva Experiencia
+    </button>
+</div>
