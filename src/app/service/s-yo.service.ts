@@ -11,7 +11,7 @@ export class SYoService {
 
 
 
-  yoURL = 'https://portfolio-ms-2022.herokuapp.com/yo/';
+  yoURL = 'https://be-mr-23-8-1.herokuapp.com/yo/';
 
 
 

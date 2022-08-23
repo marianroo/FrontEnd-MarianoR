@@ -8,7 +8,7 @@ import { Hys } from '../model/hys';
 })
 export class SHysService {
 
-  hysURL = 'https://portfolio-ms-2022.herokuapp.com/hys/';
+  hysURL = 'https://be-mr-23-8-1.herokuapp.com/hys/';
 
   constructor(private httpClient: HttpClient) { }
 

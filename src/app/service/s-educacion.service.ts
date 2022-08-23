@@ -8,7 +8,7 @@ import { Educacion } from '../model/educacion';
 })
 export class SEducacionService {
 
-  educURL = 'https://portfolio-ms-2022.herokuapp.com/educacion/';
+  educURL = 'https://be-mr-23-8-1.herokuapp.com/educacion/';
 
   constructor(private httpClient: HttpClient) { }
 

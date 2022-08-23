@@ -9,7 +9,7 @@ import { Proyectos } from '../model/proyectos';
 })
 export class SProyectosService {
 
-  proURL = 'https://portfolio-ms-2022.herokuapp.com/proyectos/';
+  proURL = 'https://be-mr-23-8-1.herokuapp.com/proyectos/';
 
 
   constructor(private httpClient: HttpClient) { }
